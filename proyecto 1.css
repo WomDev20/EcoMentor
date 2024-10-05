@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+header{
+   display: flex;
+   background-color: black; 
+   width: 100%;
+   flex-direction: row;
+   
+}
+a{
+    text-decoration: none;
+    text-decoration-style:double ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+header img{
+    width: 100px;
+height: 100px;
+}
+body{
+    background-color: #01DFA5;
+}
+.caja2 img{
+    width: 100px;
+    height: 100px;
+}
+.medium{
+    font-size: 16px;
+    padding: 15px 20px ;
+}
+.azul{
+    background: rgb(37, 170, 130);
+}
+
+.border-radius{
+    border-radius:100px ;  
+}
+.caja{
+    text-align: center;
+}
+h1{
+    color: rgb(13, 13, 41);
+    font-size: x-large;
+
+}
+p{
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(57, 151, 57)
+}
+
+.caja {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(57, 151, 57)
+}
+.caja2{
+    width: 50%;
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+/*tomar la clase en la que se encuentra el texto*/
+.encabezados p{
+    color: black;
+    text-align: center;
+}
+.nosotroslogos{
+    width: 10%;
+    height: 10%;
+    padding-top: 20%;
+}
+.nosotros{
+    background-color: bisque;
+}
+.encabezados{
+    color: rgb(5, 5, 24);
+    background-image: ;
+
+}
+.cajaequipo {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+.caja {
+    width: 50%;
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
