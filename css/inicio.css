@@ -171,3 +171,72 @@ h1{
     flex-direction:column; /* Cambia a columna si quieres apilar contenido */
     flex: 1;
 }
+
+.cajaFondo img{
+    width: 100%;        
+}
+.cajaFondo .cajaBoton{
+    display: flex;
+    flex-direction: row;
+    background: rgba(39, 37, 37, 0.514);
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+}
+.formulario{
+    background:#00ffaa;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+.formulario input{
+    display: block;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(248, 248, 103, 0.904);
+    background: rgba(248, 248, 103, 0.904);
+    font-family: Arial, Helvetica, sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.formulario textarea{
+    min-height: 120px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+}
+.formulario input[type="text"]:focus
+.formulario input[type="email"] :focus
+.formulario textarea:focus{
+   border: 2px solid #4fb560; 
+}
+.formulario input[type="submit"]{
+    width: 200px;
+    margin: 0 auto;
+    background:#090844;
+    border: 1px solid #4fb560;
+    color:  #4fb560;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.formulario input[type="submit"]:hover{
+background: #4fb560;
+color: aliceblue;
+}
+
+.correo .cajaFondo p{
+    background: #090844;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
