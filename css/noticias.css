@@ -1,7 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+body, html{
+    height: 100%;
+    background:#40E0D0 !important;
+}
+
 .content-noticias{
     height: 100%;
-    background-color: green;
+    display: grid;  
+    grid-template-rows: repeat(4, 570px);
+}
+
+.noticias-page-1{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.caja-page-1{
+    width: 85%;
+    height: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    background: #008080;
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+}
+
+.caja-page-1-title{
+    display: table-cell;
+    display: table;
+}
+
+.caja-page-1-title h1{
+    color: white;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: bold;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.caja-page-1-description{
+    display: table-cell;
+    display: table;
+}
+
+.caja-page-1-description p{
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.caja-page-1-buttons{
+    border: solid red;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.caja-page-1-buttons-left{
+    border: solid green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.jugador-img-container{
+    border: solid violet;
+    height: 100%;
+}
+.jugador-text-container{
+    border: solid turquoise;
+    height: 100%;
+}
+
+.caja-page-1-buttons-center{
+    border: solid blue;
+}
+
+.caja-page-1-buttons-right{
+    border: solid yellow;
 }
