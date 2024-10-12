@@ -9,9 +9,10 @@ body, html{
 .content-noticias{
     height: 100%;
     display: grid;  
-    grid-template-rows: repeat(4, 570px);
+    grid-template-rows: 570px 900px 570px;
 }
 
+/*CSS PARA PAGINA 1 DE SECCIÓN NOTICIAS*/
 .noticias-page-1{
     height: 100%;
     width: 100%;
@@ -20,7 +21,7 @@ body, html{
 
 .caja-page-1{
     width: 85%;
-    height: 95%;
+    height: 90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 4%;
@@ -118,4 +119,12 @@ body, html{
     padding: 5px 55px ;
     background: rgb(37, 170, 130);
     border-radius:100px;
+}
+
+/*CSS PARA PAGINA 2 DE SECCIÓN NOTICIAS*/
+.noticias-page-2{
+    background: url("../Imagenes/StockCake-Gardening Together Indoors_1726973354.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
