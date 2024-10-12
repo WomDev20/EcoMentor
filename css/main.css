@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body, html{
+#body, #html{
     margin: 0; 
     height: 100%; 
     overflow: hidden;
@@ -8,7 +8,7 @@ body, html{
 }
 
 
-.container-fluid{
+.full-main{
     height: 100%;
     border-radius: 25px;
     background: white;
@@ -56,15 +56,33 @@ body, html{
 }
 
 .link-nav a{
-    text-decoration: none;
-    text-decoration-style:double ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
-    color: white;
+    color: white !important;
     font-weight: 200;
+    cursor: pointer; 
 }
 
 .main{
     height: 100%;
-    border: solid blueviolet;
+}
+
+#frame-inicio{
+    display: block;
+    padding: 0;
+}
+
+#frame-noticias{
+    display: none;
+    padding: 0;
+}
+
+#frame-nosotros{
+    display: none;
+    padding: 0;
+}
+
+#frame-participa{
+    display: none;
+    padding: 0;
 }

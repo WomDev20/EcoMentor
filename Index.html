@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
-    <div class="container-fluid">
-
+  <body id="body">
+    <div class="container-fluid full-main">
       <div class="row header">
-
         <div class="col-md-4 row">
           <div class="col-md-4 logo-container">
             <img src="Imagenes/mundo.png" alt="logo" />
@@ -25,26 +23,26 @@
           <div class="col-md-4 site-name">
             <h1 class="h1-title">EcoMentor</h1>
           </div>
-          <div class="col-md-4 site-name">
-          </div>
+          <div class="col-md-4 site-name"></div>
         </div>
 
         <div class="col-md-8">
           <div class="row links-nav-container">
-            <div class="col-md-3 link-nav"><a href="">INICIO</a></div>
-            <div class="col-md-3 link-nav"><a href="">NOTICIAS</a></div>
-            <div class="col-md-3 link-nav"><a href="">NOSOTROS</a></div>
-            <div class="col-md-3 link-nav"><a href="">PARTICIPA</a></div>
+            <div class="col-md-3 link-nav"><a id="inicio">INICIO</a></div>
+            <div class="col-md-3 link-nav"><a id="noticias">NOTICIAS</a></div>
+            <div class="col-md-3 link-nav"><a id="nosotros">NOSOTROS</a></div>
+            <div class="col-md-3 link-nav"><a id="participa">PARTICIPA</a></div>
           </div>
         </div>
-
       </div>
 
-      <div class="row main"></div>
-
+      <div class="row main">
+        <div class="col-md-12" id="frame-inicio"></div>
+        <div class="col-md-12" id="frame-noticias"></div>
+        <div class="col-md-12" id="frame-nosotros"></div>
+        <div class="col-md-12" id="frame-participa"></div>
+      </div>
     </div>
-
-    <footer></footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -61,5 +59,46 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("inicio").onclick = function(){
+            document.getElementById("frame-inicio").style.display="block";
+            document.getElementById("frame-noticias").style.display="none";
+            document.getElementById("frame-nosotros").style.display="none";
+            document.getElementById("frame-participa").style.display="none";
+        };
+        
+        document.getElementById("noticias").onclick = function(){
+            document.getElementById("frame-noticias").style.display="block";
+            document.getElementById("frame-inicio").style.display="none";
+            document.getElementById("frame-nosotros").style.display="none";
+            document.getElementById("frame-participa").style.display="none";
+        };
+
+        document.getElementById("nosotros").onclick = function(){
+            document.getElementById("frame-nosotros").style.display="block";
+            document.getElementById("frame-inicio").style.display="none";
+            document.getElementById("frame-noticias").style.display="none";
+            document.getElementById("frame-participa").style.display="none";
+        };
+        
+        document.getElementById("participa").onclick = function(){
+            document.getElementById("frame-participa").style.display="block";
+            document.getElementById("frame-noticias").style.display="none";
+            document.getElementById("frame-inicio").style.display="none";
+            document.getElementById("frame-nosotros").style.display="none";
+        };
+
+        
+        $('document').ready(function(){
+            $('#frame-inicio').load('pages/inicio.html');
+            $('#frame-noticias').load('pages/noticias.html');
+            $('#frame-nosotros').load('pages/nosotros.html');
+            $('#frame-participa').load('pages/participa.html');
+        });
+
+
+    </script>
   </body>
 </html>
