@@ -9,39 +9,42 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>Ecomentor</title>
+    <title id="title">EcoMentor</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body id="body">
+
     <div class="container-fluid full-main">
-      <div class="row header">
-        <div class="col-md-4 row">
-          <div class="col-md-4 logo-container">
-            <img src="Imagenes/mundo.png" alt="logo" />
-          </div>
-          <div class="col-md-4 site-name">
-            <h1 class="h1-title">EcoMentor</h1>
-          </div>
-          <div class="col-md-4 site-name"></div>
+
+        <div class="row header">
+            <div class="col-md-4 row">
+                <div class="col-md-4 logo-container">
+                    <img src="Imagenes/mundo.png" alt="logo" />
+                </div>
+                <div class="col-md-4 site-name">
+                    <h1 class="h1-title">EcoMentor</h1>
+                </div>
+                <div class="col-md-4 site-name"></div>
+            </div>
+            
+            <div class="col-md-8">
+                <div class="row links-nav-container">
+                    <div class="col-md-3 link-nav"><a id="inicio">INICIO</a></div>
+                    <div class="col-md-3 link-nav"><a id="noticias">NOTICIAS</a></div>
+                    <div class="col-md-3 link-nav"><a id="nosotros">NOSOTROS</a></div>
+                    <div class="col-md-3 link-nav"><a id="participa">PARTICIPA</a></div>
+                </div>
+            </div>
+        </div> <!--Aquí termina el header-->
+        
+        <div class="row content">
+            <div class="col-md-12" id="frame-inicio"></div>
+            <div class="col-md-12" id="frame-noticias"></div>
+            <div class="col-md-12" id="frame-nosotros"></div>
+            <div class="col-md-12" id="frame-participa"></div>
         </div>
 
-        <div class="col-md-8">
-          <div class="row links-nav-container">
-            <div class="col-md-3 link-nav"><a id="inicio">INICIO</a></div>
-            <div class="col-md-3 link-nav"><a id="noticias">NOTICIAS</a></div>
-            <div class="col-md-3 link-nav"><a id="nosotros">NOSOTROS</a></div>
-            <div class="col-md-3 link-nav"><a id="participa">PARTICIPA</a></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row main">
-        <div class="col-md-12" id="frame-inicio"></div>
-        <div class="col-md-12" id="frame-noticias"></div>
-        <div class="col-md-12" id="frame-nosotros"></div>
-        <div class="col-md-12" id="frame-participa"></div>
-      </div>
     </div>
 
     <script
@@ -67,6 +70,7 @@
             document.getElementById("frame-noticias").style.display="none";
             document.getElementById("frame-nosotros").style.display="none";
             document.getElementById("frame-participa").style.display="none";
+            document.getElementById('title').innerHTML="EcoMentor"
         };
         
         document.getElementById("noticias").onclick = function(){
@@ -74,6 +78,7 @@
             document.getElementById("frame-inicio").style.display="none";
             document.getElementById("frame-nosotros").style.display="none";
             document.getElementById("frame-participa").style.display="none";
+            document.getElementById('title').innerHTML="EcoMentor - NOTICIAS"
         };
 
         document.getElementById("nosotros").onclick = function(){
@@ -81,6 +86,8 @@
             document.getElementById("frame-inicio").style.display="none";
             document.getElementById("frame-noticias").style.display="none";
             document.getElementById("frame-participa").style.display="none";
+            document.getElementById('title').innerHTML="EcoMentor - NOSOTROS"
+
         };
         
         document.getElementById("participa").onclick = function(){
@@ -88,6 +95,8 @@
             document.getElementById("frame-noticias").style.display="none";
             document.getElementById("frame-inicio").style.display="none";
             document.getElementById("frame-nosotros").style.display="none";
+            document.getElementById('title').innerHTML="EcoMentor - PARTICIPA"
+
         };
 
         

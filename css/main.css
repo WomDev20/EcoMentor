@@ -3,15 +3,16 @@
 #body, #html{
     margin: 0; 
     height: 100%; 
-    overflow: hidden;
     background-color: gray;
+    overflow: scroll;
+    scrollbar-width: thin;
 }
 
-
 .full-main{
-    height: 100%;
+    min-height: 100%;
     border-radius: 25px;
-    background: white;
+    display: grid;  
+    grid-template-rows: 18% auto;
 }
 
 .header{
@@ -63,26 +64,31 @@
     cursor: pointer; 
 }
 
-.main{
+.content{
     height: 100%;
+    border: solid violet;
 }
 
 #frame-inicio{
-    display: block;
+    height: 100%;
+    display: flex;
     padding: 0;
 }
 
 #frame-noticias{
+    height: 100%;
     display: none;
     padding: 0;
 }
 
 #frame-nosotros{
+    height: 100%;
     display: none;
     padding: 0;
 }
 
 #frame-participa{
+    height: 100%;
     display: none;
     padding: 0;
 }
