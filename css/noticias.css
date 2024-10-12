@@ -61,30 +61,61 @@ body, html{
 }
 
 .caja-page-1-buttons{
-    border: solid red;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
 }
 
 .caja-page-1-buttons-left{
-    border: solid green;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
 .jugador-img-container{
-    border: solid violet;
-    height: 100%;
-}
-.jugador-text-container{
-    border: solid turquoise;
-    height: 100%;
+    text-align: center;
 }
 
-.caja-page-1-buttons-center{
-    border: solid blue;
+.jugador-img-container img{
+    max-height: 80%;
+    max-width: 25% !important;
+}
+
+.jugador-text-container{
+    height: 100%;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -5%;
+}
+
+.jugador-text-container p{
+    word-break: break-all;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 .caja-page-1-buttons-right{
-    border: solid yellow;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caja-page-1-buttons-compartir-container{
+    height: 100%;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.caja-page-1-buttons-comentar-container{
+    height: 100%;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.page-1-button{
+    color: white !important;
+    font-size: 16px;
+    padding: 5px 55px ;
+    background: rgb(37, 170, 130);
+    border-radius:100px;
 }
