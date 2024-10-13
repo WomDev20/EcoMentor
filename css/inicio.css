@@ -148,9 +148,18 @@ body, html{
     grid-template-rows: repeat(6, 1fr);
 }
 
-.car {
+.inicio-page-3-caja-cochi-container{
     height: 100%;
-    border: solid black;
+    display: block;
+    position: relative;
+}
+
+.inicio-page-3-caja-cochi-container img{
+    position: absolute;
+    height: 170px;
+    width: 184px;
+    left: 5%;
+    top: 20%;
 }
 
 .inicio-page-3-caja-periodo-container{
