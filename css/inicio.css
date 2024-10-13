@@ -129,7 +129,7 @@ body, html{
     height: 100%;
     width: 100%;
     display: grid;  
-    grid-template-rows: 600px 100px 200px  ;
+    grid-template-rows: 600px 100px 200px;
 }
 
 .inicio-page-3-caja-container{
@@ -145,7 +145,55 @@ body, html{
     margin-top: 1%;
     background: rgba(10, 17, 38, 0.5);
     display: grid;
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.car {
+    height: 100%;
+    border: solid black;
+}
+
+.inicio-page-3-caja-periodo-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.inicio-page-3-caja-periodo{
+    height: 100%;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #2ABFB0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.periodo-opcion {
+    height: 100%;
+    padding: 0 10%;
+}
+
+.periodo-opcion div{
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: auto;
+    text-align: center;
+    padding: 10% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+    cursor: pointer; 
+}
+
+.periodo-selected {
+    background-color: black;
+    color: white;
 }
 
 .inicio-page-3-bottom {
