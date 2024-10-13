@@ -9,7 +9,7 @@ body, html{
 .content-noticias{
     height: 100%;
     display: grid;  
-    grid-template-rows: 570px 900px 1150px 570px;
+    grid-template-rows: 570px 900px 1150px 570px 900px 200px;
 }   
 
 /*CSS PARA PAGINA 1 DE SECCIÓN NOTICIAS*/
@@ -131,7 +131,6 @@ body, html{
 
 /*CSS PARA PAGINA 3 DE SECCIÓN NOTICIAS*/
 .noticias-page-3{
-    border: solid red;
     height: 100%;
     width: 100%;
     display: block;
@@ -160,6 +159,94 @@ body, html{
 
 /*CSS PARA PAGINA 4 DE SECCIÓN NOTICIAS*/
 .noticias-page-4{
-    border: solid red;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.noticias-page-4-left{
+    height: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.noticias-page-4-right{
+    padding-top: 3%;
+    height: 100%;
+}
+
+.noticias-page-4-formulario{
+    width: 86%;
+}
+
+.noticias-page-4-formulario input{
+    display: block;
+}
+
+.noticias-page-4-formulario input[type="text"],
+.noticias-page-4-formulario input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    border: 1px solid #008080;
+    background: #008080;
+    font-family: Arial, Helvetica, sans-serif Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #40E0D0;
+}
+
+.noticias-page-4-formulario textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #008080;
+    background: #008080;
+    font-family: Arial, Helvetica, sans-serif Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #40E0D0;
+}
+
+.noticias-page-4-formulario textarea{
+    height: 250px;
+    min-height: 200px;
+    max-height: 600px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+.noticias-page-4-formulario input[type="submit"]{
+    width: 200px;
+    margin: 0 auto;
+    background:rgb(229, 248, 62);
+    border: 1px solid #4fb560;
+    color:  #40E0D0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.noticias-page-4-formulario input[type="submit"]:hover{
+    background: rgb(229, 248, 62);
+    color: #40E0D0;
+}
+
+/*CSS PARA PAGINA 5 DE SECCIÓN NOTICIAS*/
+.noticias-page-5{
+    border: solid violet;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.noticias-footer{
+    border: solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
