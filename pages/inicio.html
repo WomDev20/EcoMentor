@@ -184,25 +184,25 @@
             <div class="inicio-page-3-caja-opciones-container">
               <span></span>
               <div class="inicio-page-3-caja-opciones-grid">
-                <input class="monto-selected" type="text" disabled placeholder="$50" value="$50" />
-                <input type="text" disabled placeholder="$100" value="$100" />
-                <input type="text" disabled placeholder="$250"  value="$250" />
+                <input id="monto-50" class="monto-selected" onClick="montSeleccionado(this.id)" type="text" readonly placeholder="$50" value="$50" />
+                <input id="monto-100" onClick="montSeleccionado(this.id)" type="text" readonly placeholder="$100" value="$100" />
+                <input id="monto-250" onClick="montSeleccionado(this.id)" type="text" readonly placeholder="$250"  value="$250" />
               </div>
               <span></span>
             </div>
             <div class="inicio-page-3-caja-opciones-container">
               <span></span>
               <div class="inicio-page-3-caja-opciones-grid">
-                <input type="text" disabled placeholder="$500" value="$500" />
-                <input type="text" disabled placeholder="$1000" value="$1000" />
-                <input type="text" disabled placeholder="$2000"  value="$2000" />
+                <input id="monto-500" onClick="montSeleccionado(this.id)" type="text" readonly placeholder="$500" value="$500" />
+                <input id="monto-1000" onClick="montSeleccionado(this.id)" type="text" readonly placeholder="$1000" value="$1000" />
+                <input id="monto-2000" onClick="montSeleccionado(this.id)" type="text" readonly placeholder="$2000"  value="$2000" />
               </div>
               <span></span>
             </div>
             <div class="inicio-page-3-caja-opciones-container">
               <span></span>
               <div class="cantidad-personalizada-container">
-                <input type="text" placeholder="Cantidad personalizada" />
+                <input onClick="montSeleccionado(this.id)" id="monto-custom" type="text" placeholder="Cantidad personalizada" />
               </div>
               <span></span>
             </div>
@@ -267,6 +267,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script type="text/javascript">
+      function montSeleccionado(monto_id)
+      {
+        document.getElementsByClassName("monto-selected")[0].classList.remove("monto-selected");
+        document.getElementById(monto_id).classList.add("monto-selected");
+      }
+
       document.getElementById("mensual").onclick = function(){
           document.getElementById("mensual").classList.add("periodo-selected");
           document.getElementById("anual").classList.remove("periodo-selected");
