@@ -9,6 +9,7 @@ body, html{
     min-width: 100%;
     display: grid;  
     grid-template-rows: 700px 1000px;
+    background-image: linear-gradient(to right,#2ABFB0, #DBF22E, #2ABFB0);
 }
 
 /*CSS PARA PAGINA 1 DE SECCIÓN INICIO*/
@@ -63,8 +64,61 @@ body, html{
     vertical-align: bottom;
 }
 
+/*CSS PARA PAGINA 2 DE SECCIÓN  INICIO*/
 .inicio-page-2{
     height: 100%;
-    min-width: 100%;
-    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 40px;
+}
+
+.inicio-page-2-main-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inicio-page-2-grid-container{
+    display: grid;
+    grid-template-rows: 4fr 1fr 2fr 1fr;
+}
+
+.inicio-page-2-image-container{
+    text-align: center;
+}
+
+.inicio-page-2-image-container img{
+    height: 200px;
+    width: 350px;
+}
+
+.inicio-page-2-title-container h2{
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+.inicio-page-2-description-container{
+    padding: 10px;
+}
+
+.inicio-page-2-description-container p{
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.inicio-page-2-button-container{
+    margin-top: -25px;
+}
+
+.inicio-page-2-button-container h1,
+.inicio-page-2-button-container a{
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
 }
