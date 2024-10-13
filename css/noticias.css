@@ -9,8 +9,8 @@ body, html{
 .content-noticias{
     height: 100%;
     display: grid;  
-    grid-template-rows: 570px 900px 570px;
-}
+    grid-template-rows: 570px 900px 1150px 570px;
+}   
 
 /*CSS PARA PAGINA 1 DE SECCIÓN NOTICIAS*/
 .noticias-page-1{
@@ -127,4 +127,39 @@ body, html{
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
+}
+
+/*CSS PARA PAGINA 3 DE SECCIÓN NOTICIAS*/
+.noticias-page-3{
+    border: solid red;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.caja-page-3{
+    width: 85%;
+    height: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #008080;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.caja-page-3 p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*CSS PARA PAGINA 4 DE SECCIÓN NOTICIAS*/
+.noticias-page-4{
+    border: solid red;
+    height: 100%;
 }
