@@ -294,11 +294,3 @@ body, html{
     text-align: center;
     font-weight: lighter;
 }
-
-/*CSS PARA PAGINA FOOTER DE SECCIÓN NOTICIAS*/
-.noticias-footer{
-    border: solid black;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}

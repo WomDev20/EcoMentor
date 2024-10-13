@@ -12,7 +12,7 @@
     height: 100%;
     border-radius: 25px;
     display: grid;  
-    grid-template-rows: 135px auto;
+    grid-template-rows: 135px auto 150px;
 }
 
 .header{
@@ -93,4 +93,44 @@
     height: 100%;
     display: none;
     padding: 0;
+}
+ 
+/*CSS PARA PAGINA FOOTER DE SECCIÓN NOTICIAS*/
+.footer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #080E1E;
+}
+
+.footer-left{
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.footer-left h1{
+    color: white;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.footer-left h2{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.footer-right{
+    border: solid red;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-top: 3%;
 }
