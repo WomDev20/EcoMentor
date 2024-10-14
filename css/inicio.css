@@ -331,7 +331,24 @@ body, html{
 
 .inicio-page-4-up {
     height: 100%;
-    border: solid red;
+}
+
+.inicio-page-4-caja {
+    border-radius: 2%;
+    width: 45%;
+    height: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    background: rgba(60, 60, 64, 0.7);
+    text-align: center;
+}
+
+.inicio-page-4-caja img{
+    height: 64px;   
+    width: 64px;
+    margin-top: 25%;
+    cursor: pointer;
 }
 
 .inicio-page-4-down {
